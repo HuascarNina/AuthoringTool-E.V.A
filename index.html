@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creador de cuestionarios</title>
+</head>
+<body>
+    <h1>Cuestionario</h1>
+    <h4>No se olvide seleccionar cual es la respuesta correcta de cada pregunta!</h4>
+    <hr>
+    <div class="divisor">
+        <div>
+            <div class="inputBox">
+                <input type="text" required="required" size="50">
+                <span>Primera Pregunta</span>
+            </div>
+            <div class="questionBox">
+                <p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta2" id="p21"> Texto de la respuesta A.</p>
+                <p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta2" id="p23"> Texto de la respuesta C.</p>
+                <p onclick="this.style.color='#00dfc4'"><input type="radio" name="pregunta2" id="p22"> Texto de la respuesta B.</p>
+                <p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta2" id="p24"> Texto de la respuesta D.</p>
+            </div>
+        </div>
+        
+        <div>
+            <div class="inputBox">
+                <input type="text" required="required" size="50">
+                <span>Segunda Pregunta</span>
+            </div>
+            <p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta2" id="p21"> Texto de la respuesta A.</p>
+            <p onclick="this.style.color='#00dfc4'"><input type="radio" name="pregunta2" id="p22"> Texto de la respuesta B.</p>
+            <p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta2" id="p23"> Texto de la respuesta C.</p>
+            <p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta2" id="p24"> Texto de la respuesta D.</p>
+        </div>
+        
+        <div>
+            <div class="inputBox">
+                <input type="text" required="required" size="50">
+                <span>Tercera Pregunta</span>
+            </div>
+            <p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta3" id="p31"> Texto de la respuesta A.</p>
+            <p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta3" id="p32"> Texto de la respuesta B.</p>
+            <p onclick="this.style.color='#00dfc4'"><input type="radio" name="pregunta3" id="p33"> Texto de la respuesta C.</p>
+            <p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta3" id="p34"> Texto de la respuesta D.</p>
+        </div>
+        
+        <div>
+            <div class="inputBox">
+                <input type="text" required="required" size="50">
+                <span>Cuarta Pregunta</span>
+            </div>
+            <p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta4" id="p41"> Texto de la respuesta A.</p>
+            <p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta4" id="p42"> Texto de la respuesta B.</p>
+            <p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta4" id="p43"> Texto de la respuesta C.</p>
+            <p onclick="this.style.color='#00dfc4'"><input type="radio" name="pregunta4" id="p44"> Texto de la respuesta D.</p>
+        </div>
+
+        <div>
+            <div class="inputBox">
+                <input type="text" required="required" size="50">
+                <span>Quinta Pregunta</span>
+            </div>
+            <p onclick="this.style.color='#00dfc4'"><input type="radio" name="pregunta5" id="p51"> Texto de la respuesta A.</p>
+            <p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta5" id="p52"> Texto de la respuesta B.</p>
+            <p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta5" id="p53"> Texto de la respuesta C.</p>
+            <p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta5" id="p54"> Texto de la respuesta D.</p>
+        </div>
+    </div>
+    <hr>
+
+    <p><input type="button" value="Convertir a SCORM" class="boton_personalizado" onclick="convertirScorm()"/></p>
+    <p><input type="button" value="Convertir a xAPI" class="boton_personalizado2" onclick="convertirXAPI()"/></p>
+    <img class="imagen-1" src="https://ipfs.io/ipfs/QmU3KZUX9iEnoWzYthvmJAJPcpncHFEQHHdV59wXPhrnJN?filename=1106.jpg">
+    
+
+</body>
+<link rel=StyleSheet href="style.css" type="text/css" media="screen">
+<script src=".\app.js"></script>
+</html>

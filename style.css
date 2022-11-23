@@ -1,0 +1,107 @@
+.divisor {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+
+h1 {
+    color: #00dfc4;
+}
+
+h4 {
+    position: absolute;
+    right: 15px;
+    top: 12px;
+    color: #00dfc4;
+}
+
+body {
+    background: #1d2b3a;
+    height: 500px;
+}
+
+hr {
+    border-color: rgba(255, 255, 255, 0.25);
+}
+
+.inputBox {
+    position: relative;
+    width: 350px;
+    top: 10px;
+}
+
+.inputBox input {
+    width: 390px;
+    padding: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    background: #1d2b3a;
+    border-radius: 5px;
+    outline:  none;
+    color: #fff;
+    font-size: 1em;
+    transition: 0.5s;
+}
+
+.inputBox span {
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 10px;
+    pointer-events: none;
+    font-size: 1em;
+    color: rgba(2555, 255, 255, 0.25);
+    text-transform: uppercase;
+}
+
+.inputBox input:valid ~ span,
+.inputBox input:focus ~span{
+    color: #00dfc4;
+    transform: translateX(10px) translateY(-7px);
+    font-size: 0.65em;
+    padding: 0 10px;
+    background: #1d2b3a;
+    border-left: 1px solid #00dfc4;
+    border-right: 1px solid #00dfc4;
+    letter-spacing: 0.2em;
+}
+
+.inputBox input:valid,
+.inputBox input:focus{
+    border: 1px solid #00dfc4;
+}
+
+
+.boton_personalizado, .boton_personalizado2{
+    text-decoration: none;
+    padding: 10px;
+    font-size: 1em;
+    color: #ffffff;
+    background-color: #1d2b3a;
+    border-radius: 6px;
+    border: 2px solid #00dfc4;
+  }
+  .boton_personalizado:hover, .boton_personalizado2:hover{
+    color: #00dfc4;
+  }
+
+  .boton_personalizado2{
+    position: relative;
+    left: 180px;
+    top: -58px;
+  }
+
+  .imagen-1 {
+    position: absolute;
+    width: 300px;
+    height: 200px;
+    left: 950px;
+    top: 285px;
+    padding: 0;
+    border-radius: 10px;
+    border: solid rgba(255, 255, 255, 0.25);
+  }
+
+  .imagen-2 {
+    position: absolute;
+    
+  }
