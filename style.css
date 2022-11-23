@@ -95,7 +95,7 @@ hr {
     width: 300px;
     height: 200px;
     left: 950px;
-    top: 285px;
+    top: 600px;
     padding: 0;
     border-radius: 10px;
     border: solid rgba(255, 255, 255, 0.25);
@@ -103,5 +103,44 @@ hr {
 
   .imagen-2 {
     position: absolute;
-    
   }
+
+  .question .input_text {
+    width: 280px;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    background: #1d2b3a;
+    border-radius: 5px;
+    outline:  none;
+    color: #fff;
+    font-size: 1em;
+    transition: 0.5s;
+  }
+
+  .questionBox {
+    width: 400px;
+  }
+
+  .question span {
+    position: relative;
+    left: 30px;
+    top: -28px;
+    padding: 10px;
+    pointer-events: none;
+    font-size: 1em;
+    color: rgba(2555, 255, 255, 0.25);
+    text-transform: uppercase;
+}
+
+.question .input_text:valid ~ span,
+.question .input_text:focus ~ span{
+    display: none;
+}
+
+.question .input_text:valid,
+.question .input_text:focus{
+    border: 1px solid #ffffff;
+}
+
+
