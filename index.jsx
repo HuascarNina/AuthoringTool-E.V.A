@@ -1,19 +1,19 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import {createStore} from 'redux';
+import {Provider} from 'react-redux';
+import DaliApp from './containers/DaliApp';
+import GlobalState from './reducers';
 
-import sortable from 'jquery-ui/ui/widgets/sortable';
-import ReduxProvider from './_editor/containers/ReduxProvider';
+let initialState = {
+    slideSelected: 0,
+    slides: [0],
+    slidesById: {0: {boxes: []}}
+};
+let store = createStore(GlobalState);
 
-
-require('es6-promise').polyfill();
-require('expose-loader?Ediphy!./core/editor/temp_hack');
-require('./plugins/plugin_dependencies_loader').requireAll();
-
-// Requerir archivos CSS
-import './sass/style.scss';
-
-// Nos aseguramos de que JQuery UI Sortable Widget esté inicializado
-// eslint-disable-next-line
-new sortable();
-
-ReactDOM.render((<ReduxProvider />), document.getElementById('root'));
+let root = document.getElementById('root');
+React.render(
+    <Provider store={store}>
+        {() => <DaliApp />}
+    </Provider>, root
+    );
